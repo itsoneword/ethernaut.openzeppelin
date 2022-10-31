@@ -1,8 +1,8 @@
 
 Make it past the gatekeeper and register as an entrant to pass this level.
 I have started with the following concepts:
-[Difference between tx.origin and msg.sender] (https://ethereum.stackexchange.com/questions/1891/whats-the-difference-between-msg-sender-and-tx-origin)
-[gasleft function] (https://docs.soliditylang.org/en/v0.8.3/units-and-global-variables.html#block-and-transaction-properties)
+[Difference between tx.origin and msg.sender](https://ethereum.stackexchange.com/questions/1891/whats-the-difference-between-msg-sender-and-tx-origin)
+[gasleft function](https://docs.soliditylang.org/en/v0.8.3/units-and-global-variables.html#block-and-transaction-properties)
 
 ```solidity
 // SPDX-License-Identifier: MIT
