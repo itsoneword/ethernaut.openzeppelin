@@ -53,7 +53,7 @@ In 2 words, the difference between **tx.origin** and **msg.sender**, is that 1st
 So to pass the **First gate** the only thing we need is intermediate contract between us and **GatekeeperOne** contract, we are trying to hack.
 
 The second one is a bit triclky one so lets first go through the 3rd gate:
-``Solidity
+```Solidity
   modifier gateThree(bytes8 _gateKey) {
       require(uint32(uint64(_gateKey)) == uint16(uint64(_gateKey)), "GatekeeperOne: invalid gateThree part one");
       require(uint32(uint64(_gateKey)) != uint64(_gateKey), "GatekeeperOne: invalid gateThree part two");
@@ -62,6 +62,7 @@ The second one is a bit triclky one so lets first go through the 3rd gate:
 ```
 
 Here is the conception we will need from the link above:
+
 ``` solidity
 bytes2 a = 0x1234;
 uint32 b = uint16(a); // b will be 0x00001234
@@ -79,4 +80,9 @@ thus:
   
   require(uint32(uint64(_gateKey)) != uint64(_gateKey)
   require(uint32(uint64(_gateKey)) == uint16(tx.origin)
+  
+  
+  
+.....
+To be continued =)
 
